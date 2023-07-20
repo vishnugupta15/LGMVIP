@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="middle"> CALCULATOR </div>
+        <form name="calculateform" class="calculateform">
+            <div class="screen">
+                <input type="text" name="screen" placeholder="Enter Any Number">
+            </div>
+            <div class="btn">
+                <input type="button" value="Clear All" class="clear" onclick=clear1()>
+            </div>
+            <div class="btn">
+                <input type="button" class="number num" name="num1" value="1" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number num" name="num2" value="2" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number num" name="num3" value="3" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number" name="plus" value="+" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number num" name="num4 " value="4" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number num" name="num5 " value="5" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number num" name="num6 " value="6" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number" name="minus" value="-" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number num" name="num7 " value="7" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number num" name="num8 " value="8" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number num" name="num9" value="9" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number" name="multiply" value="*" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number num" name="num0" value="0" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number" name="decimal" value="." onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number" name="divide" value="/" onclick=valuebutton(this)>
+            </div>
+            <div class="btn">
+                <input type="button" class="number" name="equal" value="Ans." onclick=calculate(this)>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
